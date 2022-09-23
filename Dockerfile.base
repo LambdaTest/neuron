@@ -1,0 +1,9 @@
+# we're just building it to cache the golang dependencies.
+# Current code will still need to be rebuilt in downstream (for example Dockerfile.hack) otherwise changes won't be reflected.
+FROM golang:1.17 as builder
+
+# create a working directory
+COPY . /neuron
+WORKDIR /neuron
+
+RUN GOARCH=amd64 GOOS=linux go build -ldflags="-w -s" -o nu

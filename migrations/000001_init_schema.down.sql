@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS test_status;
+DROP TABLE IF EXISTS test_execution;
+DROP TABLE IF EXISTS repo_admins;
+DROP TABLE IF EXISTS git_users;
+DROP TABLE IF EXISTS test_transition;
+DROP TABLE IF EXISTS build;
+DROP TABLE IF EXISTS git_events;
+DROP TABLE IF EXISTS test_dag;
+DROP TABLE IF EXISTS git_commits;
+DROP TABLE IF EXISTS repositories;
+DROP TABLE IF EXISTS organizations;
+DROP TABLE IF EXISTS test;
+DROP TABLE IF EXISTS test_suite;

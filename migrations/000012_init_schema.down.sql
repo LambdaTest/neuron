@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS branch_commit;
+DROP TABLE IF EXISTS branch;

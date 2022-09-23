@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=2.0, user-scalable=1">
+      <title>New User Sign up</title>
+
+      <style>
+
+         /* Remove space around the email design. */
+
+   html,
+body,
+body *:not(html):not(style):not(br):not(tr):not(code) {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+   body {-webkit-text-size-adjust: none;margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important;  }
+
+
+   * {-ms-text-size-adjust: 100%; }
+   table,
+
+   td {mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; }
+   img {-ms-interpolation-mode:bicubic; }
+   a {text-decoration: none; }
+
+         .unsubparent a {
+            font-size: 12px;
+            color: #cccccc !important;
+         }
+
+         @media only screen and (max-width: 600px) {
+            .inner-body {
+            width: 100% !important;
+            }
+            .footer {
+            width: 100% !important;
+            }
+         }
+
+
+      </style>
+   </head>
+   <body>
+
+      <div align="center" class="emailerwrapper" style="color: #4a4a4a;background-color: #edf2f7; padding-bottom: 50px; ">
+
+
+         <table class="inner-body" width="570" border="0" border-collapse="collapse">
+            <thead class="thead">
+               <tr>
+                  <td class="th_padding" style="padding: 15px;text-align: center;background-color: #edf2f7;">
+                      <h1 style="color: #3d4852;font-size: 19px;font-weight: bold;text-decoration: none;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';">LambdaTest</h1>
+                  </td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td style="padding:30px; background-color: #ffffff;">
+                     <p style="color: #3d4852;font-size: 18px;font-weight: bold;margin-top: 0;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';">Hello TAS TEAM!</p>
+                     <p style="color: #718096; font-size: 16px;margin-top: 0; margin-bottom: 0px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';">A new open source contributor has shown interest in TAS.</p>
+                     <p style="color: #718096; font-size: 16px;line-height: 1.5em; margin-bottom: 30px; margin-top: 10px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';">Details are listed below:</p>
+                     <p style="color: #718096; font-size: 16px;line-height: 1.5em;margin-top: 0; margin-bottom: 7px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';"><b style="width: 120px;color: black; display: inline-block;">Name &nbsp;&nbsp;:</b> {{.Name}}</p>
+                     <p style="color: #718096; font-size: 16px;line-height: 1.5em;margin-top: 0; margin-bottom: 7px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';"><b style="width: 120px;color: black; display: inline-block;">EmailID :</b> {{.EmailID}}</p>
+                     <p style="color: #718096; font-size: 16px;line-height: 1.5em;margin-top: 0; margin-bottom: 7px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';"><b style="width: 120px;color: black; display: inline-block;">Repo_Link :</b> {{.RepoLink}}</p>
+                     <p style="color: #718096; font-size: 16px;line-height: 1.5em;margin-top: 0; margin-bottom: 7px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';"><b style="width: 120px;color: black; display: inline-block;">Description :</b> {{.Description}}</p>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
+</html>

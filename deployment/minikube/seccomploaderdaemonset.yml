@@ -1,0 +1,36 @@
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: high-priority
+value: 1000000
+globalDefault: false
+description: "This priority class should be used for pods that should be spun up before other application pods only."
+
+---
+apiVersion: apps/v1
+kind: DaemonSet                     
+metadata:
+  name: seccomp-config
+  labels:
+    app: seccomp-config
+spec:
+  selector:
+    matchLabels:
+      name: seccomp-config
+  template:
+    metadata:
+      labels:
+        name: seccomp-config
+    spec:
+      containers:
+      - name: seccomp-config
+        image: seccomploader
+        imagePullPolicy: Never
+        volumeMounts:
+        - name: configfile
+          mountPath: /var/lib/kubelet/seccomp
+      priorityClassName: high-priority
+      volumes:
+      - name: configfile
+        hostPath:
+          path: /var/lib/kubelet/seccomp
